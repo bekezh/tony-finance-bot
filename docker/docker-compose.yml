@@ -1,0 +1,9 @@
+services:
+  zozh_bot:
+    build: ..
+    container_name: zozh_bot
+    restart: always
+    env_file:
+      - ../.env
+    working_dir: /app
+    command: python bot.py
